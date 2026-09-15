@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f1c2e'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23c5a85c' stroke-width='1' opacity='0.4'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23c5a85c' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='8' r='1.2' fill='%23c5a85c'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f1c2e'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23c5a85c' stroke-width='1' opacity='0.4'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23c5a85c' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='8' r='1.2' fill='%23c5a85c'/%3E%3C/svg%3E">
 <style>
     @layer base {
       html, body { margin: 0; padding: 0; }
@@ -58,8 +58,8 @@
 <!-- Identidad sacra -->
 <a class="flex items-center gap-3 shrink-0 text-crema hover:text-gold-light transition-colors" href="#"><span class="material-symbols-outlined text-gold text-2xl">church</span><div class="flex flex-col"><span class="font-serif text-base sm:text-lg font-semibold tracking-wide leading-tight">Filiberto Chorques</span><span class="text-[10px] sm:text-[11px] text-gold-light uppercase tracking-widest font-medium">Ordenación Diaconal &amp; Sacerdotal</span></div></a>
 <!-- Menú desktop -->
-<nav class="hidden md:flex items-center gap-5 lg:gap-6 text-sm font-medium text-crema/85">
-<a class="hover:text-gold-light transition-colors" href="#bienvenida">Inicio</a>
+<nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-crema/85">
+<a class="hover:text-gold-light transition-colors" href="#bienvenida">Home</a>
 <a class="hover:text-gold-light transition-colors" href="#celebraciones">Celebraciones</a>
 <a class="hover:text-gold-light transition-colors" href="#programa">Programa</a>
 <a class="hover:text-gold-light transition-colors" href="#preparacion">Preparación</a>
@@ -68,68 +68,9 @@
 <a class="hover:text-gold-light transition-colors" href="#media">Media</a><a class="hover:text-gold-light transition-colors" href="#faq">FAQ</a>
 <a class="hover:text-gold-light transition-colors" href="#contacto">Contacto</a>
 </nav>
-<!-- Acción principal y botón de menú móvil -->
+<!-- Acción principal -->
 <div class="flex items-center gap-3 shrink-0">
-<a class="hidden sm:inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-1.5 bg-gold hover:bg-gold-light text-navy rounded-sm shadow whitespace-nowrap transition-all duration-150 text-center" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-lg shrink-0">how_to_reg</span><span class="flex flex-col text-[11px] sm:text-xs font-bold tracking-wider uppercase leading-tight text-left"><span class="">Confirmar</span><span class="">Asistencia</span></span></a>
-<!-- Botón Hamburguesa Móvil -->
-<button aria-expanded="false" aria-label="Abrir menú" class="md:hidden flex items-center justify-center w-10 h-10 text-crema hover:text-gold border border-gold/40 rounded-sm bg-navy-light/40 transition-colors focus:outline-none focus:ring-1 focus:ring-gold" id="mobile-menu-btn" type="button">
-<svg class="w-6 h-6 stroke-current transition-transform" fill="none" id="hamburger-icon" viewBox="0 0 24 24">
-<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-<svg class="hidden w-6 h-6 stroke-current transition-transform" fill="none" id="close-icon" viewBox="0 0 24 24">
-<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-</div>
-</div>
-<!-- Menú Desplegable Móvil -->
-<div class="hidden md:hidden fixed inset-x-0 top-20 bg-[#0f1c2e]/98 backdrop-blur-lg border-b border-gold/40 shadow-2xl transition-all duration-300 max-h-[calc(100vh-5rem)] overflow-y-auto" id="mobile-menu">
-<div class="max-w-md mx-auto px-6 py-6 space-y-4">
-<nav class="flex flex-col space-y-1">
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#bienvenida">
-<span class="material-symbols-outlined text-gold text-lg">home</span>
-        Inicio
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#celebraciones">
-<span class="material-symbols-outlined text-gold text-lg">church</span>
-        Celebraciones
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#programa">
-<span class="material-symbols-outlined text-gold text-lg">schedule</span>
-        Programa
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#preparacion">
-<span class="material-symbols-outlined text-gold text-lg">favorite</span>
-        Preparación espiritual
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#ayuda">
-<span class="material-symbols-outlined text-gold text-lg">volunteer_activism</span>
-        Cómo ayudar
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#alojamiento">
-<span class="material-symbols-outlined text-gold text-lg">hotel</span>
-        Alojamientos
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#media">
-<span class="material-symbols-outlined text-gold text-lg">photo_camera</span>
-        Media y recuerdos
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#faq">
-<span class="material-symbols-outlined text-gold text-lg">help</span>
-        Preguntas frecuentes
-      </a>
-<a class="mobile-nav-link flex items-center gap-3 px-3 py-2.5 rounded text-base font-serif text-crema hover:text-gold-light hover:bg-white/5 transition-colors border-l-2 border-transparent hover:border-gold" href="#contacto">
-<span class="material-symbols-outlined text-gold text-lg">mail</span>
-        Contacto
-      </a>
-</nav>
-<div class="pt-4 border-t border-gold/20">
-<a class="w-full flex items-center justify-center gap-2.5 px-5 py-3.5 bg-gold hover:bg-gold-light text-navy font-bold text-xs uppercase tracking-widest rounded-sm shadow-md transition-all text-center" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-base">how_to_reg</span>
-<span class="">Confirmar Asistencia</span>
-<span class="material-symbols-outlined text-xs">open_in_new</span>
-</a>
-</div>
+<a class="inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-1.5 bg-gold hover:bg-gold-light text-navy rounded-sm shadow whitespace-nowrap transition-all duration-150 text-center" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-lg shrink-0">how_to_reg</span><span class="flex flex-col text-[11px] sm:text-xs font-bold tracking-wider uppercase leading-tight text-left"><span class="">Confirmar</span><span class="">Asistencia</span></span></a>
 </div>
 </div>
 </header>
@@ -183,7 +124,7 @@
 </div>
 <!-- Botonera de acciones directas -->
 <div class="flex flex-wrap items-center justify-center gap-3">
-<a class="px-6 py-3 bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wider uppercase shadow-md transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" rel="noopener noreferrer" target="_blank">
+<a class="px-6 py-3 bg-gold hover:bg-gold-light text-navy font-bold text-sm tracking-wider uppercase shadow-md transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" target="_blank" rel="noopener noreferrer">
             Confirmar Asistencia
           </a>
 <a class="px-5 py-3 bg-navy-light/70 hover:bg-navy-light text-crema font-medium text-sm tracking-wider uppercase border border-gold/40 transition-all" href="#celebraciones">
@@ -202,7 +143,7 @@
 <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gold text-navy text-xs uppercase font-bold tracking-widest">
             Carta a Familiares y Amigos
           </div>
-<div class="text-center mb-6"><div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-3"><div class="relative shrink-0"><div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-gold shadow-md"><img alt="Filiberto Chorques Vila" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1VHxRlDsXfEkPCYbwRB4gjQAGFaikPci24-SL5K8bP0miEl8fzr_KSZyht1r1xk0NhZ5K1k4KkqGwWRGuaxEGZLAHX9CHmp1vKbzHLzHQRsjq4-djlITIWV9g669Y2MFu6VcKUcUDORPsi94hw8F_o9g3FzmE2nBbtMVb-ffjOzoNffdgnckJ76Wld3jj4I826QU_nOHG8Hs84IRzLqZdr8kZ5K-G7MBzj5Ox9leFgBsq-Pc-DIHgJHIVAs"></div></div><div class="text-center sm:text-left"><span class="text-xs uppercase tracking-widest text-pietra font-semibold block">Roma</span><h3 class="font-serif text-3xl sm:text-4xl text-navy font-semibold mt-1">Queridos amigos:</h3><span class="block text-xs font-serif italic text-gold mt-0.5">Filiberto Chorques Vila</span></div></div></div>
+<div class="text-center mb-6"><div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-3"><div class="relative shrink-0"><div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-gold shadow-md"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR-X2z-dVs0iomFY9F5bPkDPS18iFM9LfPHWeDOqv6U3qgsf0_D0QFRUxRp4YyiUxhVGInTBPzAYrMcXw5eP4DLJNKw-hH7CfLUXv1y0TwyyrcN7mLQ83kQUe5rpRF5-9Mz-_gylXa13aCq0s3vUa1UUQM3ewzLgG6s3QpWEBvht2quqsBc_LXK6oIAZnybf8IOnEpPSPS1n83prQXGfK2WSWrH0mcij7RQvvmzEp_ZbFzKAsHurhu9Q" alt="Filiberto Chorques Vila" class="w-full h-full object-cover object-center"></div></div><div class="text-center sm:text-left"><span class="text-xs uppercase tracking-widest text-pietra font-semibold block">Roma</span><h3 class="font-serif text-3xl sm:text-4xl text-navy font-semibold mt-1">Queridos amigos:</h3><span class="block text-xs font-serif italic text-gold mt-0.5">Filiberto Chorques Vila</span></div></div></div>
 <div class="prose font-sans text-navy/90 text-base sm:text-lg leading-relaxed space-y-4 text-justify">
 <p class="">
               Tengo la gran alegría de anunciaros que, si Dios quiere, el <strong>sábado 21 de noviembre de 2026</strong> recibiré la ordenación diaconal, y el <strong>sábado 22 de mayo de 2027</strong>, la ordenación sacerdotal en Roma, junto a otros 14 futuros diáconos y sacerdotes, en la Basílica de San Eugenio.
@@ -220,9 +161,10 @@
 <div class="mt-8 pt-6 border-t border-pietra-border/70 flex flex-col sm:flex-row items-center justify-between gap-4">
 <div class="text-center sm:text-left">
 <span class="font-serif italic text-xl text-navy">Filiberto Chorques Vila&nbsp;</span>
+
 </div>
 <div class="flex items-center gap-3">
-<a class="inline-flex items-center gap-2 text-xs uppercase font-bold text-navy hover:text-gold tracking-widest" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" rel="noopener noreferrer" target="_blank">Formulario de Asistencia <span class="material-symbols-outlined text-base">open_in_new</span></a>
+<a class="inline-flex items-center gap-2 text-xs uppercase font-bold text-navy hover:text-gold tracking-widest" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" target="_blank" rel="noopener noreferrer">Formulario de Asistencia <span class="material-symbols-outlined text-base">open_in_new</span></a>
 </div>
 </div>
 </div>
@@ -336,7 +278,7 @@
 <span class="text-[11px] uppercase font-bold text-navy tracking-wider block mb-1">Primeras Misas de Sacerdote</span>
 <ul class="text-xs text-navy/85 space-y-2 mt-1">
 <li class="">
-<strong>Domingo, 23 de mayo de 2027 (Solemnidad de la Santísima Trinidad):</strong> Primera Misa <span class="" style="color: rgba(24, 50, 74, 0.8);">en la </span><span class="" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; color: rgba(24, 50, 74, 0.8);">Iglesia Prelaticia de Santa María de la Paz</span><span class="" style="color: rgba(24, 50, 74, 0.8);"> (Viale Bruno Buozzi 75, Roma).</span></li>
+<strong>Domingo, 23 de mayo de 2027 (Solemnidad de la Santísima Trinidad):</strong> Primera Misa <span style="color: rgba(24, 50, 74, 0.8);" class="">en la </span><span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; color: rgba(24, 50, 74, 0.8);" class="">Iglesia Prelaticia de Santa María de la Paz</span><span style="color: rgba(24, 50, 74, 0.8);" class=""> (Viale Bruno Buozzi 75, Roma).</span></li>
 <li class="">
 <strong>Siguientes celebraciones:</strong>&nbsp;Primera Misa solemne en la Parroquia Sant Antoni Abat de&nbsp;<strong>Canals,&nbsp;</strong>(día y horario por confirmar)</li>
 </ul>
@@ -447,7 +389,7 @@
 </div>
 <h3 class="font-serif text-2xl text-navy font-bold mb-4">Acordaos (Oración a la Santísima Virgen María)</h3>
 <p class="font-serif italic text-base sm:text-lg text-navy/90 leading-relaxed max-w-3xl">
-            «Acordaos, oh piadosísima Virgen María, que jamás se ha oído decir que ninguno de los que han acudido a vuestra protección, implorando vuestra asistencia y reclamando vuestro socorro, haya sido abandonado de vos.<br><div class="">Animado con esta confianza, a vos también acudo, oh Madre, Virgen de vírgenes; y, aunque gimiendo bajo el peso de mis pecados, me atrevo a aparecer ante vuestra presencia soberana.</div>No desechéis, oh Madre de Dios, mis humildes súplicas, antes bien escuchadlas y atendedlas favorablemente. Amén».</p><p class=""></p><div><span class="" style="color: rgba(24, 50, 74, 0.9); font-size: 1.125rem;"></span></div><p class=""></p>
+            «Acordaos, oh piadosísima Virgen María, que jamás se ha oído decir que ninguno de los que han acudido a vuestra protección, implorando vuestra asistencia y reclamando vuestro socorro, haya sido abandonado de vos.<div class="">Animado con esta confianza, a vos también acudo, oh Madre, Virgen de vírgenes; y, aunque gimiendo bajo el peso de mis pecados, me atrevo a aparecer ante vuestra presencia soberana.<br>No desechéis, oh Madre de Dios, mis humildes súplicas, antes bien escuchadlas y atendedlas favorablemente. Amén».</div></p><div><span style="color: rgba(24, 50, 74, 0.9); font-size: 1.125rem;" class=""></span></div><p class=""></p>
 <div class="mt-4 pt-4 border-t border-pietra-border/60 flex items-center justify-between text-xs text-pietra"><p class="text-xs sm:text-sm text-navy/85 leading-relaxed italic">«Estaría muy agradecido de poder ser acompañado en mi preparación en este camino hacia el sacerdocio con el rezo diario, aunque solo sea de un Avemaría o de un Acordaos por mí y por los otros 14 futuros diáconos y sacerdotes del Opus Dei.»</p></div>
 </div>
 <!-- 3 Pilares de preparación según san Josemaría y la Iglesia -->
@@ -457,10 +399,10 @@
 <span class="material-symbols-outlined text-xl">work</span>
 </div>
 <h4 class="font-serif text-lg font-bold text-navy mb-2">Ofrecimiento del propio Trabajo</h4>
-<p class="text-xs sm:text-sm text-navy/80 leading-relaxed">Se puede rezar en cualquier lugar, también por nosotros, ofreciendo a Dios el trabajo o el estudio de cada día. Todas las actividades ordinarias pueden transformarse en oración vividas con Cristo. Como enseña san Josemaría: «<span class="" style="font-size: 0.875rem;">también el trabajo tuyo debe ser oración personal, ha de convertirse en una gran conversación con Nuestro Padre del Cielo»</span>, buscando ese «quid divinum» en las cosas pequeñas de cada jornada.</p>
+<p class="text-xs sm:text-sm text-navy/80 leading-relaxed">Se puede rezar en cualquier lugar, también por nosotros, ofreciendo a Dios el trabajo o el estudio de cada día. Todas las actividades ordinarias pueden transformarse en oración vividas con Cristo. Como enseña san Josemaría: «<span style="font-size: 0.875rem;" class="">también el trabajo tuyo debe ser oración personal, ha de convertirse en una gran conversación con Nuestro Padre del Cielo»</span>, buscando ese «quid divinum» en las cosas pequeñas de cada jornada.</p>
 </div>
 <div class="p-6 bg-crema-low border border-pietra-border rounded-sm">
-<div class="w-10 h-10 rounded bg-navy text-gold flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><line x1="12" x2="12" y1="3" y2="21"></line><line x1="6" x2="18" y1="9" y2="9"></line></svg></div>
+<div class="w-10 h-10 rounded bg-navy text-gold flex items-center justify-center mb-4"><svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><line x1="6" y1="9" x2="18" y2="9"></line></svg></div>
 <h4 class="font-serif text-lg font-bold text-navy mb-2">Retiro Espiritual&nbsp;</h4>
 <p class="text-xs sm:text-sm text-navy/80 leading-relaxed">Antes de la ordenación, los ordenandos realizamos unos días de ejercicios espirituales (Can. 1039 CIC). Una bonita forma de acompañarnos en esta preparación es unirte a nosotros participando tú también en un retiro espiritual, para que esta ordenación sea ocasión de gracia y conversión para todos.</p>
 </div>
@@ -469,7 +411,7 @@
 <span class="material-symbols-outlined text-xl">podcasts</span>
 </div>
 <h4 class="font-serif text-lg font-bold text-navy mb-2">Recursos y Meditaciones</h4>
-<div class="space-y-2 text-xs sm:text-sm"><p class="text-navy/80 mb-2 leading-relaxed">Recursos de oración recomendados para acompañar espiritualmente este camino:</p><ul class="space-y-2 text-navy/90"><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/article/santo-rosario-audio/" rel="noopener noreferrer" target="_blank"><span class="">Rezar el Santo Rosario (audio)</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/gospel/" rel="noopener noreferrer" target="_blank"><span class="">Evangelio del día meditado</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://10minutosconjesus.org/" rel="noopener noreferrer" target="_blank"><span class="">10 Minutos con Jesús (Meditaciones)</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class=""><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/youth/" rel="noopener noreferrer" target="_blank"><span class="">Recursos de formación para jóvenes</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li></ul></div>
+<div class="space-y-2 text-xs sm:text-sm"><p class="text-navy/80 mb-2 leading-relaxed">Recursos de oración recomendados para acompañar espiritualmente este camino:</p><ul class="space-y-2 text-navy/90"><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/article/santo-rosario-audio/" target="_blank" rel="noopener noreferrer"><span class="">Rezar el Santo Rosario (audio)</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/gospel/" target="_blank" rel="noopener noreferrer"><span class="">Evangelio del día meditado</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class="pb-1.5 border-b border-pietra-border/40"><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://10minutosconjesus.org/" target="_blank" rel="noopener noreferrer"><span class="">10 Minutos con Jesús (Meditaciones)</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li><li class=""><a class="flex items-center justify-between text-navy hover:text-gold transition-colors font-medium" href="https://opusdei.org/es/youth/" target="_blank" rel="noopener noreferrer"><span class="">Recursos de formación para jóvenes</span><span class="material-symbols-outlined text-xs text-gold shrink-0">open_in_new</span></a></li></ul></div>
 </div>
 </div>
 </div>
@@ -517,7 +459,7 @@
 <p class="text-[11px] text-pietra">Para detalles exactos de transferencia bancaria, contactar directamente con Fili.</p>
 </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full pt-1"><a class="inline-flex items-center justify-center gap-1.5 text-center py-2.5 px-3 bg-navy hover:bg-navy-light text-crema text-xs uppercase font-bold tracking-wider transition-colors rounded-sm shadow-xs" href="mailto:fichovi@gmail.com?subject=Detalles%20bancarios%20-%20Ordenaci%C3%B3n%20Filiberto%20Chorques"><span class="material-symbols-outlined text-sm text-gold">mail</span><span class="">Contactar por Email</span></a><a class="inline-flex items-center justify-center gap-1.5 text-center py-2.5 px-3 bg-gold hover:bg-gold-light text-navy text-xs uppercase font-bold tracking-wider transition-colors rounded-sm shadow-xs" href="https://wa.me/34625274495?text=Hola%20Fili,%20quisiera%20los%20detalles%20bancarios%20para%20la%20ordenaci%C3%B3n" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-sm">chat</span><span class="">WhatsApp</span></a></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full pt-1"><a class="inline-flex items-center justify-center gap-1.5 text-center py-2.5 px-3 bg-navy hover:bg-navy-light text-crema text-xs uppercase font-bold tracking-wider transition-colors rounded-sm shadow-xs" href="mailto:fichovi@gmail.com?subject=Detalles%20bancarios%20-%20Ordenaci%C3%B3n%20Filiberto%20Chorques"><span class="material-symbols-outlined text-sm text-gold">mail</span><span class="">Contactar por Email</span></a><a class="inline-flex items-center justify-center gap-1.5 text-center py-2.5 px-3 bg-gold hover:bg-gold-light text-navy text-xs uppercase font-bold tracking-wider transition-colors rounded-sm shadow-xs" href="https://wa.me/34625274495?text=Hola%20Fili,%20quisiera%20los%20detalles%20bancarios%20para%20la%20ordenaci%C3%B3n" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-sm">chat</span><span class="">WhatsApp</span></a></div>
 </div>
 </div>
 </div>
@@ -542,31 +484,31 @@
 <p class="text-xs text-pietra mb-4">Zona muy bien comunicada con la Basílica de San Eugenio mediante tranvía y autobús.</p>
 <ul class="text-xs text-navy/90 space-y-2.5">
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.mariabambina.va" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.mariabambina.va" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa de Acogida Maria Santissima Bambina</strong><span class="block text-pietra">Vistas directas a la Cúpula de San Pedro. Muy solicitada.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casalasalle.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casalasalle.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa La Salle</strong><span class="block text-pietra">Via Aurelia / Prati · Habitaciones amplias y jardines tranquilos.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casamissionariepallottine.it/casa-per-ferie/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casamissionariepallottine.it/casa-per-ferie/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Hermanas Misioneras Palotinas</strong><span class="block text-pietra">Viale delle Mura Aurelie · Ambiente de paz.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://villalanterome.org/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://villalanterome.org/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Villa Lante</strong><span class="block text-pietra">Gianicolo / Trastevere alto.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casapaolosesto.it/it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casapaolosesto.it/it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa Paolo VI &amp; Casa Tra Noi</strong><span class="block text-pietra">Junto al Vaticano y Vía Aurelia.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
@@ -574,6 +516,7 @@
 </ul>
 </div>
 </div>
+
 <!-- Zona Trastevere & Centro Storico -->
 <div class="bg-crema-low border border-pietra-border p-6 rounded-sm flex flex-col justify-between">
 <div>
@@ -584,25 +527,25 @@
 <p class="text-xs text-pietra mb-4">Encanto romano clásico, accesible a pie a numerosos templos insignes.</p>
 <ul class="text-xs text-navy/90 space-y-2.5">
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.sfromana.it/it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.sfromana.it/it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa de Huéspedes Santa Francesca Romana</strong><span class="block text-pietra">En pleno corazón de Trastevere con claustro apacible.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.scuolasacrocuoremonteverde.it/casa-per-ferie/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.scuolasacrocuoremonteverde.it/casa-per-ferie/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Istituto Sacro Cuore (Monteverde)</strong><span class="block text-pietra">Acogida religiosa familiar y ambiente de oración.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casasangiuseppe.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casasangiuseppe.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa S. Giuseppe</strong><span class="block text-pietra">Trastevere · Casa per ferie accogliente.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://fraternadomus.it/dove/roma-centro/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://fraternadomus.it/dove/roma-centro/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Fraterna Domus &amp; Casa Bonus Pastor</strong><span class="block text-pietra">Centro histórico y zona Via della Conciliazione.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
@@ -610,6 +553,7 @@
 </ul>
 </div>
 </div>
+
 <!-- Zona Parioli & Flaminio (Cerca de Sant'Eugenio) -->
 <div class="bg-crema-low border border-pietra-border p-6 rounded-sm flex flex-col justify-between">
 <div>
@@ -619,23 +563,24 @@
 </div>
 <p class="text-xs text-pietra mb-4">La ubicación más próxima a la Basílica de San Eugenio (Viale delle Belle Arti).</p>
 <ul class="text-xs text-navy/90 space-y-2.5">
-<li class="pb-2 border-b border-pietra-border/40"><a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.booking.com/landmark/it/piazza-del-popolo.es.html" rel="noopener noreferrer" target="_blank"><div><strong class="block font-semibold group-hover/link:underline">Hoteles y B&amp;B en Piazza del Popolo y Borghese</strong><span class="block text-pietra">Distancia a pie de 10-15 min hasta la Basílica.</span></div><span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span></a></li>
+<li class="pb-2 border-b border-pietra-border/40"><a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.booking.com/landmark/it/piazza-del-popolo.es.html" target="_blank" rel="noopener noreferrer"><div><strong class="block font-semibold group-hover/link:underline">Hoteles y B&amp;B en Piazza del Popolo y Borghese</strong><span class="block text-pietra">Distancia a pie de 10-15 min hasta la Basílica.</span></div><span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span></a></li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casaperferie-suorelourdes.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.casaperferie-suorelourdes.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa Religiosa Nuestra Señora de Lourdes</strong><span class="block text-pietra">Suore di Nostra Signora di Lourdes.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.filarmonicahouse.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.filarmonicahouse.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Filarmonica House</strong><span class="block text-pietra">Alojamiento cómodo en el distrito Flaminio.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
-<li class=""><a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.booking.com/searchresults.es.html?aid=356980&amp;label=gog235jc-10CAsocUIMYnJ1bm8tYnVvenppSBRYA2hxiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKZmKTVBsACAdICJDRiNTIxYTY0LTUzYWYtNGUwOS05MzhmLTVmOTlkODI0N2IxOdgCAeACAQ&amp;redirected=1&amp;city=-126693&amp;highlighted_hotels=8329620&amp;hlrd=user_sh&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=71bb6f9a1e883958d39bab83f1cd7b00#map_opened" rel="noopener noreferrer" target="_blank"><div><strong class="block font-semibold group-hover/link:underline">Zona Bruno Buozzi</strong><span class="block text-pietra">A poca distancia de Santa María de la Paz.</span></div><span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span></a></li>
+<li class=""><a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.booking.com/searchresults.es.html?aid=356980&amp;label=gog235jc-10CAsocUIMYnJ1bm8tYnVvenppSBRYA2hxiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAKZmKTVBsACAdICJDRiNTIxYTY0LTUzYWYtNGUwOS05MzhmLTVmOTlkODI0N2IxOdgCAeACAQ&amp;redirected=1&amp;city=-126693&amp;highlighted_hotels=8329620&amp;hlrd=user_sh&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=71bb6f9a1e883958d39bab83f1cd7b00#map_opened" target="_blank" rel="noopener noreferrer"><div><strong class="block font-semibold group-hover/link:underline">Zona Bruno Buozzi</strong><span class="block text-pietra">A poca distancia de Santa María de la Paz.</span></div><span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span></a></li>
 </ul>
 </div>
 </div>
+
 <!-- Zona San Juan & Esquilino -->
 <div class="bg-crema-low border border-pietra-border p-6 rounded-sm flex flex-col justify-between">
 <div>
@@ -646,20 +591,22 @@
 <p class="text-xs text-pietra mb-4">Conexión directa con la parada de Metro Flaminio / Popolo.</p>
 <ul class="text-xs text-navy/90 space-y-2.5">
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.sangiuseppedicluny.it/it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.sangiuseppedicluny.it/it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Instituto San Giuseppe di Cluny</strong><span class="block text-pietra">Cercana a la Basílica de San Juan de Letrán y Metro.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://csse-roma.com/casa-per-ferie/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://csse-roma.com/casa-per-ferie/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Suore S. Elisabetta (Casa per Ferie)</strong><span class="block text-pietra">Hospitalidad religiosa en la zona San Giovanni.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
+
 </ul>
 </div>
 </div>
+
 <!-- Zona Aurelia & Villa Pamphili / Grottarossa -->
 <div class="bg-crema-low border border-pietra-border p-6 rounded-sm flex flex-col justify-between">
 <div>
@@ -670,26 +617,28 @@
 <p class="text-xs text-pietra mb-4">Comodidad para familias con vehículo propio o autobuses organizados.</p>
 <ul class="text-xs text-navy/90 space-y-2.5">
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://obrerasdelacruz-roma.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://obrerasdelacruz-roma.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Casa S. Juan de Ribera / Ávila</strong><span class="block text-pietra">Obreras de la Cruz · Acogida para familias y grupos.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.novadomusaurelia.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.novadomusaurelia.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Nova Domus Aurelia</strong><span class="block text-pietra">Via Aurelia · Cómodas conexiones.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
 <li class="pb-2 border-b border-pietra-border/40">
-<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.carpegnapalace.it/" rel="noopener noreferrer" target="_blank">
+<a class="group/link flex items-start justify-between gap-1 text-navy hover:text-gold transition-colors" href="https://www.carpegnapalace.it/" target="_blank" rel="noopener noreferrer">
 <div><strong class="block font-semibold group-hover/link:underline">Carpegna Palace (Domus Mariae)</strong><span class="block text-pietra">Amplio complejo hotelero cerca de Villa Pamphili.</span></div>
 <span class="material-symbols-outlined text-xs text-gold shrink-0 mt-0.5">open_in_new</span>
 </a>
 </li>
+
 </ul>
 </div>
 </div>
+
 <!-- Información de Reserva & Buscador -->
 <div class="bg-navy text-crema border border-gold/40 p-6 rounded-sm flex flex-col justify-between shadow-xs">
 <div>
@@ -772,10 +721,10 @@ El vídeo oficial de la retransmisión solemne en directo (a través de opusdei.
 </div>
 <div class="p-6 pt-0 flex flex-col sm:flex-row gap-3"><div class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-pietra/20 text-pietra text-xs uppercase font-bold tracking-wider rounded-sm text-center cursor-default">
   <span class="material-symbols-outlined text-sm">schedule</span>
-  <span>El enlace directo a la transmisión estará disponible aquí antes de la celebración.</span>
+  <span>El enlace se publicará antes de la celebración</span>
 </div><div class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-pietra/20 text-pietra text-xs uppercase font-bold tracking-wider rounded-sm text-center cursor-default">
   <span class="material-symbols-outlined text-sm">photo_library</span>
-  <span>La galería fotográfica oficial de la ordenación sacerdotal y primera Misa estará disponible tras la celebración.</span>
+  <span>Las fotografías estarán disponibles después</span>
 </div></div>
 </div>
 </div>
@@ -815,7 +764,7 @@ Si tomaste fotos o vídeos durante las ceremonias en San Eugenio, la Misa en San
 </section>
 <!-- SECCIÓN 7: FORMULARIO RSVP DE CONFIRMACIÓN -->
 <section class="py-20 bg-white" id="confirmar">
-<div class="max-w-4xl mx-auto px-6"><div class="bg-crema border border-pietra-border p-8 sm:p-12 shadow-sm text-center relative overflow-hidden"><div class="inline-block px-4 py-1 bg-gold text-navy text-xs uppercase font-bold tracking-widest mb-4">Participación y Asistencia</div><h2 class="font-serif text-3xl sm:text-4xl text-navy font-bold mb-3">Confirmar Asistencia</h2><p class="text-base sm:text-lg font-serif italic text-navy/90 max-w-2xl mx-auto mb-6">«Os rogamos encarecidamente confirmar vuestra presencia con la mayor antelación posible para facilitar la organización litúrgica, la gestión de acreditaciones y los espacios de celebración y acogida en Roma.»</p><div class="max-w-xl mx-auto bg-white border border-pietra-border p-6 rounded-sm mb-8 text-left space-y-3 shadow-xs"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold text-xl shrink-0 mt-0.5">event_available</span><div><strong class="text-xs uppercase font-bold tracking-wider text-navy block">¿Qué se indicará en el formulario?</strong><p class="text-xs text-navy/80 mt-0.5 leading-relaxed">Podrás detallar tu asistencia a la <strong class="text-navy">Ordenación Diaconal (noviembre 2026)</strong>, a la <strong class="text-navy">Ordenación Sacerdotal (mayo 2027)</strong>, a las primeras Misas de acción de gracias y al buffet festivo en Cavabianca.</p></div></div><div class="flex items-start gap-3 pt-2 border-t border-pietra-border/40"><span class="material-symbols-outlined text-gold text-xl shrink-0 mt-0.5">group</span><div><strong class="text-xs uppercase font-bold tracking-wider text-navy block">Acompañantes y Necesidades Especiales</strong><p class="text-xs text-navy/80 mt-0.5 leading-relaxed">Permite especificar el número de familiares o acompañantes, necesidades de transporte, alergias o restricciones alimentarias, así como dejarnos un mensaje personal.</p></div></div></div><div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-4"><a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-gold hover:bg-gold-light text-navy text-xs sm:text-sm uppercase font-bold tracking-widest rounded-sm shadow-md transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-lg">how_to_reg</span><span class="">Abrir Formulario de Confirmación</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></div></div>
+<div class="max-w-4xl mx-auto px-6"><div class="bg-crema border border-pietra-border p-8 sm:p-12 shadow-sm text-center relative overflow-hidden"><div class="inline-block px-4 py-1 bg-gold text-navy text-xs uppercase font-bold tracking-widest mb-4">Participación y Asistencia</div><h2 class="font-serif text-3xl sm:text-4xl text-navy font-bold mb-3">Confirmar Asistencia</h2><p class="text-base sm:text-lg font-serif italic text-navy/90 max-w-2xl mx-auto mb-6">«Os rogamos encarecidamente confirmar vuestra presencia con la mayor antelación posible para facilitar la organización litúrgica, la gestión de acreditaciones y los espacios de celebración y acogida en Roma.»</p><div class="max-w-xl mx-auto bg-white border border-pietra-border p-6 rounded-sm mb-8 text-left space-y-3 shadow-xs"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold text-xl shrink-0 mt-0.5">event_available</span><div><strong class="text-xs uppercase font-bold tracking-wider text-navy block">¿Qué se indicará en el formulario?</strong><p class="text-xs text-navy/80 mt-0.5 leading-relaxed">Podrás detallar tu asistencia a la <strong class="text-navy">Ordenación Diaconal (noviembre 2026)</strong>, a la <strong class="text-navy">Ordenación Sacerdotal (mayo 2027)</strong>, a las primeras Misas de acción de gracias y al buffet festivo en Cavabianca.</p></div></div><div class="flex items-start gap-3 pt-2 border-t border-pietra-border/40"><span class="material-symbols-outlined text-gold text-xl shrink-0 mt-0.5">group</span><div><strong class="text-xs uppercase font-bold tracking-wider text-navy block">Acompañantes y Necesidades Especiales</strong><p class="text-xs text-navy/80 mt-0.5 leading-relaxed">Permite especificar el número de familiares o acompañantes, necesidades de transporte, alergias o restricciones alimentarias, así como dejarnos un mensaje personal.</p></div></div></div><div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-4"><a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-gold hover:bg-gold-light text-navy text-xs sm:text-sm uppercase font-bold tracking-widest rounded-sm shadow-md transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfvh-rCAOM8zUYbE8y5C4yTRMU3t4q_SFUJ21Y8PH5g_nTipA/viewform?usp=preview" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-lg">how_to_reg</span><span class="">Abrir Formulario de Confirmación</span><span class="material-symbols-outlined text-sm">open_in_new</span></a></div></div></div>
 </section>
 <!-- SECCIÓN 8: INFORMACIÓN DE CONTACTO DE FILIBERTO CHORQUES VILA -->
 <section class="py-16 bg-navy text-crema border-t border-gold/30" id="contacto">
@@ -848,6 +797,7 @@ Si tomaste fotos o vídeos durante las ceremonias en San Eugenio, la Misa en San
               Via di Grottarossa, 1375<br>
               00189 Roma, Italia
             </p>
+
 </div>
 <!-- Columna 3: Prelatura y Sedes Sagradas -->
 <div>
@@ -861,6 +811,7 @@ Si tomaste fotos o vídeos durante las ceremonias en San Eugenio, la Misa en San
 <strong>Iglesia Prelaticia de Santa María de la Paz:</strong><br>
                 Viale Bruno Buozzi 75, Roma
               </li>
+
 </ul>
 </div>
 </div>
@@ -871,6 +822,7 @@ Si tomaste fotos o vídeos durante las ceremonias en San Eugenio, la Misa en San
 <footer class="bg-navy-dark text-crema/70 py-8 border-t border-navy-light text-center text-xs">
 <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
 <div class="flex items-center gap-2">
+
 <span class="">Roma 2026 - 2027</span>
 </div>
 <p class="text-pietra-light text-[11px]">
@@ -881,76 +833,10 @@ Si tomaste fotos o vídeos durante las ceremonias en San Eugenio, la Misa en San
       </a>
 </div>
 </footer>
-<!-- SCRIPT PARA EL CONTROL DEL MENÚ HAMBURGUESA MÓVIL -->
-<script>
-  (function () {
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-    const navLinks = document.querySelectorAll('.mobile-nav-link');
 
-    if (!mobileMenuBtn || !mobileMenu) return;
 
-    function openMenu() {
-      mobileMenu.classList.remove('hidden');
-      hamburgerIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
-      mobileMenuBtn.setAttribute('aria-expanded', 'true');
-      mobileMenuBtn.setAttribute('aria-label', 'Cerrar menú');
-    }
 
-    function closeMenu() {
-      mobileMenu.classList.add('hidden');
-      hamburgerIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-      mobileMenuBtn.setAttribute('aria-expanded', 'false');
-      mobileMenuBtn.setAttribute('aria-label', 'Abrir menú');
-    }
 
-    function toggleMenu(e) {
-      if (e) e.stopPropagation();
-      const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-      if (isExpanded) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    }
-
-    mobileMenuBtn.addEventListener('click', toggleMenu);
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        closeMenu();
-      });
-    });
-
-    // Cerrar al pulsar fuera del menú
-    document.addEventListener('click', (event) => {
-      if (!mobileMenu.classList.contains('hidden')) {
-        if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
-          closeMenu();
-        }
-      }
-    });
-
-    // Cerrar al presionar la tecla Escape
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
-        closeMenu();
-        mobileMenuBtn.focus();
-      }
-    });
-
-    // Cerrar si se redimensiona a pantalla ancha
-    window.addEventListener('resize', () => {
-      if (window.innerWidth >= 768 && !mobileMenu.classList.contains('hidden')) {
-        closeMenu();
-      }
-    });
-  })();
-</script>
 
 
 </body></html>
